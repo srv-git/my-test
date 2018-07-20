@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kitchen</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="js/script.js"></script>
+<style type="text/css">
+.sidenav {
+    right: -300px
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: auto;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 15px 10px;
+}
+.overlay3 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background-color: rgba(255,255,255, 0.75);
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+body .sidenav {
+    right: 0;left: auto;
+  }
+#sidebar_sec.active #myCanvasNav{
+  width: 100%;opacity: 0.8;
+}
+#sidebar_sec.active #mySidenav{
+  margin-right: -300px
+  right:0px;
+}
+</style>
+<script>
+function openNav() {
+  $("#sidebar_sec").addClass('active');
+}
+function closeNav() {
+  $("#sidebar_sec").removeClass('active');
+}
+function closeOffcanvas() {
+  $("#sidebar_sec").removeClass('active');
+}
+</script>
+
+</head>
+<body>
+
+<section id="sidebar_sec" class="sidebar">
+  <div id="myCanvasNav" class="overlay3" onclick="closeOffcanvas()" style="width: 0%; opacity: 0;"></div>
+  <div id="mySidenav" class="sidenav">
+    <h5>Your cart <a href="javascript:void(0)" class="closebtn pull-right" onclick="closeNav()">Close</a></h5>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</section>
+<section class="nav_main">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li >
+            <a href="#">
+              <span class="delivery_to  block black">DELIVERY TO</span>
+              Gomti Nagar, Lucknow
+            </a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="menu block  black">MENU</span>All Categories <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Filters <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Page 1-1</a></li>
+              <li><a href="#">Page 1-2</a></li>
+              <li><a href="#">Page 1-3</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="fa fa-user-plus block text-center"></span> Sign Up</a></li>
+          <li><a href="#"><span class="fa fa-sign-in block text-center"></span> Login</a></li>
+          <li><a href="#" onclick="openNav()"><span class="fa fa-shopping-cart block text-center"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header ">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#onlyMenu0">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+      </div>
+      <div class="only_nav_text collapse navbar-collapse text-right" id="onlyMenu0">
+        <ul class="nav navbar-nav text-left ">
+          <li><a href="#">offers</a></li>
+          <li><a href="#">mains n sides</a></li>
+          <li><a href="#">fit n fab</a></li>
+          <li><a href="#">desserts</a></li>
+          <li><a href="#">all day</a></li>
+          <li><a href="#">pizzas</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<section class="carousal_sec">
+  <div class="container">
+      <div id="index_Carousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#index_Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#index_Carousel" data-slide-to="1"></li>
+        <li data-target="#index_Carousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/banar.jpg" alt="banar">
+        </div>
+
+        <div class="item">
+          <img src="img/banar.jpg" alt="banar">
+        </div>
+
+        <div class="item">
+          <img src="img/banar.jpg" alt="banar">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#index_Carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#index_Carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>  
+</section>
+<section class="great_offer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="img_offfer_text">
+          <div class="offer_img">
+            <img src="img/spoon_cup.jpg">
+          </div>
+          <div class="offer_text">
+            <h3>Try Us Out With Great offers</h3>
+            <h4>Get upto 20% off + Free Delivery on first order.</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="sign_up_order_btn_container"><button type="button" class="btn btn-primary">SIGN UP AND ORDER</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="all_day">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+          <div class="sec_title">
+            <h2><span>All Day</span></h2>
+            <h4>Eat light through the day!</h4>
+          </div>
+      </div>
+      <div class="col-sm-12">
+          <div class="eat_type_container">
+            <div class="eat_type_item">
+              <div class="eti_img">
+                <img src="img/burger.jpg" alt="food-type">
+                <span class="eti_text">Hot Selling</span>
+              </div>
+              <h4>Barbeque Chicken Burger</h5>
+              <p class="continental_p"><span class="square_c"><span class="circle_c"></span></span>  Continental</p>
+              <div class="food_type_price">
+                <p class="old_user_p">RS 150</p>
+                <p class="new_old_user_cart">
+                  <button  class="btn btn-primary pull-right">Add To Cart</button>
+                  <span class="new_user_offer">RS 120</span><a href="#" class="new_user_offer_link">NEW USER OFFER</a>
+                </p>
+                <p class="food_likes">
+                  <span class="fa fa-heart-o"></span>
+                  855 favs 1500+ brought  this week
+                </p>
+              </div>
+            </div>
+            <div class="eat_type_item">
+              <div class="eti_img">
+                <img src="img/chapati.jpg" alt="food-type">
+                <span class="eti_text">Hot Selling</span>
+              </div>
+              <h4>Paratha Pizza</h5>
+              <p class="continental_p"><span class="square_c green_c"><span class="circle_c"></span></span>  Continental</p>
+              <div class="food_type_price">
+                <p class="old_user_p">RS 150</p>
+                <p class="new_old_user_cart">
+                  <button  class="btn btn-primary pull-right">Add To Cart</button>
+                  <span class="new_user_offer">RS 120</span><a href="#" class="new_user_offer_link">NEW USER OFFER</a>
+                </p>
+                <p class="food_likes">
+                  <span class="fa fa-heart-o"></span>
+                  855 favs 1500+ brought  this week
+                </p>
+              </div>
+            </div>
+            <div class="eat_type_item">
+              <div class="eti_img">
+                <img src="img/vegetable.jpg" alt="food-type">
+                <span class="eti_text">Hot Selling</span>
+              </div>
+              <h4>Tomato & Olive Pizza</h5>
+              <p class="continental_p"><span class="square_c green_c"><span class="circle_c"></span></span>  Continental</p>
+              <div class="food_type_price">
+                <p class="old_user_p">RS 150</p>
+                <p class="new_old_user_cart">
+                  <button  class="btn btn-primary pull-right">Add To Cart</button>
+                  <span class="new_user_offer">RS 120</span><a href="#" class="new_user_offer_link">NEW USER OFFER</a>
+                </p>
+                <p class="food_likes">
+                  <span class="fa fa-heart-o"></span>
+                  855 favs 1500+ brought  this week
+                </p>
+              </div>
+            </div>
+            <div class="eat_type_item">
+              <div class="eti_img">
+                <img src="img/fish.jpg" alt="food-type">
+                <span class="eti_text">Hot Selling</span>
+              </div>
+              <h4>Chilly Fish</h5>
+              <p class="continental_p"><span class="square_c"><span class="circle_c"></span></span>  Continental</p>
+              <div class="food_type_price">
+                <p class="old_user_p">RS 150</p>
+                <p class="new_old_user_cart">
+                  <button  class="btn btn-primary pull-right">Add To Cart</button>
+                  <span class="new_user_offer">RS 120</span><a href="#" class="new_user_offer_link">NEW USER OFFER</a>
+                </p>
+                <p class="food_likes">
+                  <span class="fa fa-heart-o"></span>
+                  855 favs 1500+ brought  this week
+                </p>
+              </div>
+            </div>
+            <div class="eat_type_item">
+              <div class="eti_img">
+                <img src="img/samosa.jpg" alt="food-type">
+                <span class="eti_text">Hot Selling</span>
+              </div>
+              <h4>Samosa</h5>
+              <p class="continental_p"><span class="square_c green_c"><span class="circle_c"></span></span>  Continental</p>
+              <div class="food_type_price">
+                <p class="old_user_p">RS 150</p>
+                <p class="new_old_user_cart">
+                  <button  class="btn btn-primary pull-right">Add To Cart</button>
+                  <span class="new_user_offer">RS 120</span><a href="#" class="new_user_offer_link">NEW USER OFFER</a>
+                </p>
+                <p class="food_likes">
+                  <span class="fa fa-heart-o"></span>
+                  855 favs 1500+ brought  this week
+                </p>
+              </div>
+            </div>
+            <div class="eat_type_item">
+              <div class="eti_img">
+                <img src="img/pakoda.jpg" alt="food-type">
+                <span class="eti_text">Hot Selling</span>
+              </div>
+              <h4>Pakoda Potato</h5>
+              <p class="continental_p"><span class="square_c"><span class="circle_c"></span></span>  Continental</p>
+              <div class="food_type_price">
+                <p class="old_user_p">RS 150</p>
+                <p class="new_old_user_cart">
+                  <button  class="btn btn-primary pull-right">Add To Cart</button>
+                  <span class="new_user_offer">RS 120</span><a href="#" class="new_user_offer_link">NEW USER OFFER</a>
+                </p>
+                <p class="food_likes">
+                  <span class="fa fa-heart-o"></span>
+                  855 favs 1500+ brought  this week
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <div class="chc_mfu_container">
+          <div class="chc_mfu_item">
+            <h4>COMPANY</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="chc_mfu_item">
+            <h4>HELP & CONTACT  </h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="chc_mfu_item">
+            <h4>MORE FROM US</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="privacy_terms"><a href="#">Terms</a> &nbsp;&nbsp; <a href="#">Privacy</a></p>
+      </div>
+      <div class="col-sm-5">
+        <form  class="footer_news_letter">
+          <h5>SUBSCRIBE TO OUR DROOLWORTHY NEWSLETTER</h5>
+          <div class="input-group">
+             <input class="btn " name="email" id="email" type="email" placeholder="Your Email" required>
+             <button class="btn btn-default " type="submit">Subscribe</button>
+          </div>
+        </form>
+        <p class="f_social">
+          <a href="#" class="fs_img">
+            <img src="img/app_store.png">
+          </a>
+          <a href="#" class="fs_img">
+            <img src="img/g_play.png">
+          </a>
+          <a href="#">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a href="#">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a href="#">
+            <span class="fa fa-facebook"></span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+ <script data-prepros-origin-host="localhost" src="http://localhost:7880/__prepros-server__/prepros.js"> </script>
+</body>
+</html>
