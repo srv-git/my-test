@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<h1>COming Soon</h1>
+	<h1>Coming Soon</h1>
 
 	<h2>New Coming Soon</h2>
 	<h2>New Coming Soon</h2>
