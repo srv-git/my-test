@@ -7,5 +7,7 @@
 	<h1>COming Soon</h1>
 
 	<h2>New Coming Soon</h2>
+	<h2>New Coming Soon</h2>
+	<h2>New Coming Soon</h2>
 </body>
 </html>
